@@ -7,14 +7,19 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: postgres
+  username: root
   password: password
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: 127.0.0.1
   timeout: 5000
+
 development:
   <<: *default
   database: library
-
+  username: root
+  password: password
+  host: db
+  port: 5432
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
