@@ -20,3 +20,4 @@ connect DB:
 build docker and run server
  * docker-compose up --build
  * docker-compose up -d
+# rails7
